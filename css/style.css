@@ -191,7 +191,7 @@ a{
 }
 .banner-list li{
   border: 1px solid #DCDCDC;
-  width: 33.4%;
+  width: 432px;
 }
 .banner-list li a{
   font-size: 32px;
@@ -237,18 +237,17 @@ h4{
   height: 24px;
   border-radius: 4px;
 }
-.product-list{
+.product-list{  
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  
+  gap: 80px 24px;
   margin-bottom: 80px;
+}
+.product-list li img {
+  width: 306px;  
 }
 
-.product-list li{
-  width: 25%;
-  padding-right: 24px;
-  margin-bottom: 80px;
-}
 .color-brown{
   background-color: #5F3E2D;
   margin-right: 8px;
@@ -257,7 +256,7 @@ h4{
   background-color: #B75929;
 }
 .color-red{
-  color:#AA0601
+  color:#AA0601;
 }
 .price{
   display: flex;
@@ -374,8 +373,8 @@ hr {
     width: 40px;
     height: 40px;
   }
-  .product-list li{
-    width: 50%;
+  .product-list li img{
+    width: 336px;
   }
   .container{
     padding:0px 36px;
@@ -406,17 +405,17 @@ hr {
   }
   .product-list{
     margin-bottom: 80px;
+    gap:36px 24px;
   }
-  .product-list li{
-    width: 50%;
-    padding-right: 24px;
-    margin-bottom: 40px;
-  }
+  
 }
 @media (max-width: 767px)
 {
   .container{
     padding:0px 15px;
+  }
+  h1,h2{
+    font-size: 24px;
   }
   .logo-white-img{
     margin-left: 15px;
@@ -442,21 +441,28 @@ hr {
   .banner-list li a{
     font-size: 16px;
   }
-  
+  .banner-title li {
+    width: 50%;
+    height: 136px;
+  }
   .banner-leftimg{
     background-image: url(../img/product-header-sm-1.png);
     vertical-align: middle; 
     background-size: cover;
-  
   }
   .banner-rightimg{
     background-image: url(../img/product-header-sm-2.png);
     vertical-align: middle;
     background-size: cover;
+  
   }
   
-  .product-list li{
-    width: 100%;
+  .product-list{
+    gap:24px 0;
+    margin-bottom: 64px;
+  }
+  .product-list li img{
+    width: 348px;
   }
   .contact img{
     width: 24px;
