@@ -144,7 +144,7 @@ body {
 img{
   vertical-align: middle;
   display: inline-block;
-  font-size: 0;
+  height: auto;
   max-width: 100%;
 }
 a{
@@ -243,11 +243,10 @@ h4{
   justify-content: space-between;
   flex-wrap: wrap;  
   margin-bottom: 80px;
+  gap:80px 24px;
 }
 .product-list li {
-  max-width: 25%;
-  padding: 0 12px;
-  margin-bottom: 80px;
+  max-width: 23.6%;
 }
 
 .color-brown{
@@ -404,12 +403,11 @@ hr {
     background-size: cover;
   }
   .product-list{
-    margin-bottom: 80px;    
+    margin-bottom: 80px;   
+    gap:36px 24px; 
   }
   .product-list li {
-    max-width: 50%;
-    padding: 0 12px;
-    margin-bottom: 36px;
+    max-width: 48%;    
   }
 }
 @media (max-width: 767px)
