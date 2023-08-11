@@ -143,8 +143,9 @@ body {
 }
 img{
   vertical-align: middle;
+  display: inline-block;
+  font-size: 0;
   max-width: 100%;
-  height: auto;
 }
 a{
   text-decoration: none;
@@ -241,11 +242,12 @@ h4{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;  
-  gap: 80px 24px;
   margin-bottom: 80px;
 }
-.product-list li img {
-  width: 306px;  
+.product-list li {
+  max-width: 25%;
+  padding: 0 12px;
+  margin-bottom: 80px;
 }
 
 .color-brown{
@@ -373,9 +375,7 @@ hr {
     width: 40px;
     height: 40px;
   }
-  .product-list li img{
-    width: 336px;
-  }
+ 
   .container{
     padding:0px 36px;
   }
@@ -404,10 +404,13 @@ hr {
     background-size: cover;
   }
   .product-list{
-    margin-bottom: 80px;
-    gap:36px 24px;
+    margin-bottom: 80px;    
   }
-  
+  .product-list li {
+    max-width: 50%;
+    padding: 0 12px;
+    margin-bottom: 36px;
+  }
 }
 @media (max-width: 767px)
 {
@@ -457,12 +460,12 @@ hr {
   
   }
   
-  .product-list{
-    gap:24px 0;
+  .product-list{    
     margin-bottom: 64px;
   }
-  .product-list li img{
-    width: 348px;
+  .product-list li {
+    max-width: 100%;       
+    margin-bottom: 24px;
   }
   .contact img{
     width: 24px;
